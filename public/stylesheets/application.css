@@ -2,27 +2,15 @@
 	text-align: center;
 }
 
-.buttons {
-	text-align: center;
-}
-
-.buttons a {
-	text-decoration: none;
-	color: black;
-}
-
-.center {
-	text-align: center;
-}
-
-.nav-bar {
-	background: black;
-	color: white;
-	padding: 20px;
-}
-
-.contact-card {
+.main-link {
+	width: 100px;
 	border: 1px solid black;
-	padding: 10px;
-	margin: 20px;
+	border-radius: 7px;
+	margin: 10px;
+	text-align:center;
+}
+
+a {
+	text-decoration:none;
+	color: inherit;
 }
