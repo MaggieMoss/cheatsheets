@@ -1,37 +1,166 @@
-<div>
-	What's the deal with git?
-</div>
-
-<div>
-	Common Git Commands
-</div>
-
-<h3>Getting Started</h3>
-<ul>
-	<li>git init</li>
-	<li>git add .</li>
-	<li>git commit -m "Write message here"</li>
-	<li></li>
-</ul>
-
-<h3>Handy git commands</h3>
-<ul>
-	<li>git status</li>
-	<li>git diff</li>
-	<li>git add /path/to/file</li>
-	<li>git stash</li>
-</ul>
-
-<h3>Branches, Branches, Branches</h3>
-	<div class="info">
-		What is a branch?
+<div class="row title">
+	<div class="four column">
+	<img src="https://git-scm.com/images/logo@2x.png" alt="git-logo">
 	</div>
-<ul>
-	<li>git checkout -b branchname</li>
-	<li>git checkout branchname</li>
-	<li>git merge branchname</li>
-	<li>git branch -a</li>
-	<li>git branch -d branchname</li>
-</ul>
+	<div class="eight column git-tag-line">
+		--the-magical-version-control-system
+		<div class="links">
+			<a href="#getting-started">Getting Started</a> |
+			<a href="#handy-commands">Handy Commands</a> |
+			<a href="#branches">Branches</a> |
+			<a href="#merging">Merging</a>
+		</div>
+	</div>
+</div>
+<section class="getting-started">
+	<div class="topic-title">
+		GETTING STARTED
+	</div>
+	<div class="topic-content">
+		<div class="command-line">git init</div>
+		Before you do anything you have to initialize, or create, your Git repository. You do this with the git init command. It says to your computer "Hey, this folder I'm in, is now a Git repository."
+	</div>
+	<div class="topic-content">
+		<div class="command-line">git add .</div>
+		When you are ready to commit your changes you first need to stage them. Use the '.' to add all directories and files.
+	</div>
+	<div class="topic-content">
+		<div class="command-line">git commit -m "commit message"</div>
+		When you've added all your files, it's time to commit. You <strong>need</strong> to include a commit message, and it's best to make sure it's descriptive. Try not to write things like "added code" or "changed stuff". Commit messages should document the changes you have made to your last commit. <strong>Tip:</strong> Commit often! Each time you add a file, or make significant changes, commit your work. This will give you a log of all the changes you make, which helps to not only track where any bugs were created but also document your development process.
+	</div>
+	<div class="topic-content">
+		<div class="command-line">git remote add origin url</div>
+		Register with your local git repository that you will be distributing all changes to a remote repository.
+	</div>
+	<div class="topic-content">
+		<div class="command-line">git remote -v</div>
+		Verify that your local git repository can speak/sync with your remote one.
+	</div>
+	<div class="topic-content">
+		<div class="command-line">git push -u origin master</div>
+		Push all changes to your master branch up to your remote repository.
+		<em>Hey, what does the -u mean?</em>
+		The -u flag means that git will use this remote/local combination when you type git push going forward.
+	</div>
+</section>
+<section id="handy-commands">
+	<div class="topic-title">
+		HANDY GIT COMMANDS
+	</div>
+	<div class="topic-content">
+		<div class="command-line">git status</div>
+		Git status is useful for seeing what changes you've made. This will show you all files that have been edited, created or deleted. It's a good idea to run git status before you add files and commit changes.
+	</div>
+	<div class="topic-content">
+		<div class="command-line">git diff path/to/file</div>
+		This command shows the changes you've made to a specified file by diffing your local version with the upstream version. It will show you code that has been added or deleted.
+	</div>
+	<div class="topic-content">
+		<div class="command-line">git add /path/to/file</div>
+		If you want to add files and directories one by one, you can use this command instead of git add .
+	</div>
+	<div class="topic-content">
+		<div class="command-line">git log</div>
+		Shows all of your commit logs. This way you can go back and see your commit history. This is where writing good git commit messages comes in to play.
+	</div>
+	<div class="topic-content">
+		<div class="command-line">git clone < url ></div>
+		Clone an existing repository from a remote source.
+	</div>
+	<div class="topic-content">
+		<div class="command-line">git clone < url > < dir ></div>
+		Clone an existing repository from a remote source and specify the directory in which it should go.
+	</div>
+	<div class="topic-content">
+		<div class="command-line">git pull</div>
+		Retrieve a copy of all changes that have been pushed to your remote repository <strong>and</strong> merge them into your code.
+	</div>
+	<div class="topic-content">
+		<div class="command-line">git fetch</div>
+		Retrieve a copy of all changes that have been pushed to your remote repository. Does <strong>not</strong> merge into your code.
+	</div>
+	<div class="topic-content">
+		<div class="command-line">git diff</div>
+		Show differences between your working copy and the index
+	</div>
+</section>
+<section id="branches">
+	<div class="topic-title">
+		BRANCHES
+	</div>
+	<div class="topic-content">
+		<div class="row">
+			<div class="four column">
+				<div class="what">Wait, what?</div>
+				<div>Like a tree?</div>
+			</div>
+			<div class="eight column">
+				Yes, you can think of your git repository a little bit like a tree. Your main code base would be the 'trunk', and you can use 'branches' to work on some of the files without affecting the rest of the code. This means you can test out new styles with CSS, or add a whole new feature without worrying about breaking your existing code.
+			</div>
+		</div>
+	</div>
+	<div class="topic-content">
+		<div class="command-line">git checkout -b branchname</div>
+		This command creates a new local branch and automatically checks it out. The new branch is essentially a copy of whatever branch you were on before you ran the command.
+	</div>
+	<div class="topic-content">
+		<div class="command-line">git checkout branchname</div>
+		Checks out an existing branch.
+	</div>
+	<div class="topic-content">
+		<div class="command-line">git merge branchname </div>
+		Merge an existing branch into the current branch.
+	</div>
+	<div class="topic-content">
+		<div class="command-line">git branch -a </div>
+		Shows all existing branches and highlights the current branch.
+	</div>	
+</section>
+<section id="merging">
+	<div class="topic-title">
+		MERGING
+	</div>
+	<div class="topic-content">
+		<div class="row">
+			<div class="four column">
+				<div class="what">This sounds scary.</div>
+			</div>
+			<div class="eight column">
+				I promise, it's not. Remember how we branched off to work on our new feature? Merging is how we get that new code back on the 'trunk' portion of or repository-tree analogy. All we're doing is taking our fancy new code and merging it back in with our stable branch.
+			</div>
+		</div>
+	</div>
+	<div class="topic-content">
+		<div class="command-line">git merge --no-ff branch</div>
+		Merge all of the differences between branch and master into the master branch. This brings all of the work you have done in your branch into the master branch. 
+		<em>What is that</em><strong> --no-ff</strong> <em>flag doing?</em>
+		The -no-ff flag tells git to maintain the full record of all the changes you've made, including creating a new branch and all the work that went into that branch.
+	</div>
+</section>
+<section id="helpful-links">
+	<div class="topic-title">Helpful Links</div>
+	<div>
+		<a href="https://git-scm.com/documentation">Git Documentation</a>
+	</div>
+	<div>
+		<a href="https://help.github.com/">Github help guide</a>
+	</div>
+</section>
 
-<h3>Errors? WTF.</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,7 +1,27 @@
-.title {
-	text-align: center;
+* {
+	font-family: "adelle", Georgia, "Times New Roman", serif;
+	
 }
 
+/* GIT PAGE */
+.title {
+	text-align: center;
+	padding: 20px;
+}
+.git-tag-line {
+	font-family: "adelle", Georgia, "Times New Roman", serif;
+	color: #9a9994;
+	text-align: center;
+	font-size: 2em;
+	padding-top: 13px;
+}
+.links { text-align: center; }
+.links a {
+	font-size: 20px;
+}
+.links a:hover {
+	color: black;
+}
 .main-link {
 	width: 100px;
 	border: 1px solid black;
@@ -9,8 +29,42 @@
 	margin: 10px;
 	text-align:center;
 }
-
+.what {
+	font-size: 3vw;
+	text-align: center;
+}
+.what + div {
+	text-align: center;
+}
 a {
 	text-decoration:none;
 	color: inherit;
+}
+.topic-content {
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+.topic-content + .topic-content {
+	border-top: 1px solid grey;
+	padding-top: 10px;
+}
+.topic-title {
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	text-align: center;
+	font-size: 30px;
+	font-weight:600;
+	padding: 10px;
+	margin: 10px 0px;
+}
+
+.command-line {
+	font-weight: 600;
+}
+
+#helpful-links div {
+	text-align: center;
+}
+#helpful-links a:hover {
+	color: indianred;
 }
