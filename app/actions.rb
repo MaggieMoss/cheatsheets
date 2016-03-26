@@ -23,9 +23,12 @@ get '/sinatra' do
 end 
 
 get '/active-record' do 
-end 
 
+end
 
+def greeting(answer)
+	"#{answer}"
+end
 
 
 

@@ -1,14 +1,160 @@
-<section>
-	<div class="row">
-		<div class="four columns">
-			<img src="https://www.ruby-lang.org/images/header-ruby-logo.png" alt="ruby-logo">
-			<div class="css-title"></div>Ruby
+<div class="git">
+	<section>
+		<div class="row">
+			<div class="four column">
+				<div class="css-title">
+					Ruby
+				</div>
+			</div>
+			<div class="eight column">
+				<div class="tag-line">"Hello #{first_name}, ready to learn ruby?"</div>
+				<div class="links">
+					<a href="#data-types">Data Types</a> |
+					<a href="#variables">Variables</a> | 
+					<a href="#methods">Methods</a>
+				</div>
+			</div>
 		</div>
-		<div class="eight">
-			
+	</section>
+	<section id="data-types">
+		<div class="topic-title">Data Types</div>
+		<div class="row">
+			<div class="six column">
+				<div class="column-title">Strings</div>
+				<p>Strings can be surrounded by either single quotes:</p>
+				<div class="code">'I'm a string'</div>
+				<p>Or double quotes:</p>
+				<div class="code">"I'm a string, too."</div>
+				<p>To use a contraction inside a string, always use double quotes:</p>
+				<div class="code">"Isn't this fun?"</div>
+				<p>We can combine strings</p>
+				<div class="code">
+					"First string, " + "second string"
+					<br>
+					=> "First string, second string"
+				</div>
+
+			</div>
+			<div class="six column">
+				<div class="column-title">Integers</div>
+				<p>Integers are numbers without decimals.</p>
+				<div class="code">
+					<div class="comment"># we can add them together</div>
+					1 + 10
+					<br>
+					=> 11
+					<div class="comment"># or subtract them</div>
+					5 - 2
+					<br>
+					=> 3
+					<div class="comment"># divide</div>
+					10 % 2
+					<br>
+					=> 2
+					<div class="comment"># or multiply</div>
+					2 * 3
+					<br>
+					=> 6
+				</div>
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
+	<section id="variables">
+		<div class="topic-title">Variables</div>
+		<div class="row">
+			<p>Like a bookmark, sometimes you want to save a value for later. In Ruby we do this using variables.</p>
+		</div>
+		<div class="row">
+			<div class="six column">
+				<div class="column-title">The rules:</div>
+				<ul>
+					<li>Variable names can only contain letters, numbers and underscores</li>
+					<li>Variable names cannot start with a number</li>
+					<li>Variables should not be all-caps; those are special variables called constants</li>
+					<li>Variables are case sensitive</li>
+				</ul>
+			</div>
+			<div class="six column">
+				<div class="code">
+					<span class="comment"># this is a comment</span>
+					<br>
+					my_new_variable = "I'm a variable!"
+					<br>
+					my_age = 99
+					<br>
+					ruby_is_the_best = true
+				</div>
+				<div class="column-title">Tips:</div>
+				The variable name should describe its contents. Ask yourself if someone else would understand it.
+			</div>
+		</div>
+	</section>
+	<section id="methods">
+		<div class="topic-title">Methods</div>
+		<div class="row">
+			<div class="six column">
+				<img src="/images/method_how_to.png" alt="method-writing-instructions">
+			</div>
+			<div class="six column">
+				<div class="column-title">What's the deal?</div>
+				<p>Methods are like little recipes or instructions that you give a name so that you can easily call them again in the future.</p>
+				<ol>
+					<li>Use def to start your method definition</li>	
+					<li>Name your method with snake case</li>	
+					<li>Add the code that will run when the method is called</li>	
+					<li>Close your method with the end keyword</li>	
+					<li>Call your method</li>
+				</ol>
+				<p>Once you have defined your method you just need to call it. In other words you need to say to Ruby: time to do that thing I told you about.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="six column">
+				<div class="column-title">Arguments</div>	
+				<p>
+					An argument is something your method needs in order to accomplish its goal. When you define a method that requires arguments, you tell it to expect them like so:
+				</p>
+				<div class="code">
+					<span class="def">def</span> <span class="method-name">greeting</span>(first_name, time)
+					<br>
+					&nbsp&nbsp puts "Good #{time}, #{first_name}!"
+					<br>
+					<span class="def">end</span>
+				</div>
+				Then, when we want to call our greeting method, we have to give it the arguments its expecting. 
+				<div class="code">
+					greeting("Maggie", "Morning")
+					<br>
+					=> "Good Morning, Maggie!"
+				</div>
+			</div>
+			<div class="six column">
+				<div class="column-title">Tips</div>
+				<p>Like naming your variables and classes, naming methods well can be a huge help when programming. Calling a method do_stuff isn't as descriptive or helpful as calling it login_user.</p>
+				<p>Like naming your methods, you can name your arguments anything you want, the name is for you to remember what it is, not for your computer. Inside the method you have to use the same name you used above when you want the data.</p>
+
+			</div>
+		</div>
+		
+	</section>
+	<section id="built-in-methods">
+		<div class="topic-title">Common Ruby Methods</div>
+		<div class="row">
+			In addition to the custom methods you can write yourself, ruby comes out of the box with tons of helpful methods you can use.
+		</div>
+		<div class="row">
+			<div class="six column">
+				<div class="column-title">Puts</div>
+				Prints to the screen with a new line included at the end.
+				<div class="code">
+					puts "Hello, world!"
+					<br>
+					=> "Hello, world!"
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
 <!--  DATA types -->
 
 <!--  Error messages -->

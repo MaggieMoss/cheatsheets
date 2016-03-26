@@ -4,7 +4,7 @@
 	padding: 30px;
 }
 
-.row, .column {
+.row, .column, .code {
 	box-sizing: border-box;
 }
 

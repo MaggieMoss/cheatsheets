@@ -17,17 +17,29 @@
 	text-align: center;
 }
 
-.css-code {
+.code {
 	height: 100%;
-	width: 80%;
-	background: papayawhip;
-	padding: 5px;
+	width: 100%;
+	padding: 10px;
 	border-radius: 5px;
+	font-family: monospace;
+	font-size: 17px;
+	color: white;
+	background: #446B88;
+	margin-bottom: 5px;
 }
-
+.comment {
+	color: lightgrey;
+}
+.def {
+	color: indianred;
+}
+.method-name {
+	color: lightblue;
+}
 .css-title {
 	font-size: 70px;
-	color: #F54D27;
+	color: #d25150;
 }
 /* GIT PAGE */
 .git {
@@ -79,7 +91,10 @@ a {
 	text-decoration:none;
 	color: inherit;
 }
-
+img {
+	width: 100%;
+	border-radius: 5px;
+}
 .topic-content {
 	margin-bottom: 10px;
 	padding-top: 10px;
