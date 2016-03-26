@@ -35,6 +35,7 @@ GEM
     rack-test (0.6.3)
       rack (>= 1.0)
     rake (10.4.2)
+    rdiscount (2.1.8)
     ripl (0.7.1)
       bond (~> 0.5.1)
     ripl-multi_line (0.3.1)
@@ -79,9 +80,13 @@ DEPENDENCIES
   pry
   puma
   rake
+  rdiscount
   shotgun
   sinatra
   sinatra-activerecord
   sinatra-contrib
   sqlite3
   tux
+
+BUNDLED WITH
+   1.10.6

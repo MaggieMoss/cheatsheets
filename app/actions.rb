@@ -1,9 +1,10 @@
+
 get '/' do
-	erb :'/index'
+	erb :index
 end 
 
 get '/css' do
-	
+	erb :css
 end
 
 get '/html' do
@@ -15,9 +16,13 @@ get '/git' do
 end 
 
 get '/ruby' do
+	erb :ruby
 end 
 
 get '/sinatra' do
+end 
+
+get '/active-record' do 
 end 
 
 

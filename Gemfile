@@ -8,6 +8,7 @@ gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'sinatra-activerecord'
 
+gem 'rdiscount'
 gem 'puma'
 gem 'tux'
 

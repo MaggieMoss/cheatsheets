@@ -1,27 +1,63 @@
-* {
-	font-family: "adelle", Georgia, "Times New Roman", serif;
-	
+/* CSS PAGE */
+
+.css {
+	font-family: 'Montserrat', sans-serif;
+}
+.css .row {
+	margin-top: 10px;
+}
+.css p {
+	font-size: 14px;
+}
+.css .column {
+	border-radius: 5px;
 }
 
+.css-header {
+	text-align: center;
+}
+
+.css-code {
+	height: 100%;
+	width: 80%;
+	background: papayawhip;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.css-title {
+	font-size: 70px;
+	color: #F54D27;
+}
 /* GIT PAGE */
+.git {
+	font-family: "adelle", Georgia, "Times New Roman", serif;
+}
+
 .title {
 	text-align: center;
 	padding: 20px;
 }
-.git-tag-line {
-	font-family: "adelle", Georgia, "Times New Roman", serif;
+
+.tag-line {
 	color: #9a9994;
 	text-align: center;
 	font-size: 2em;
 	padding-top: 13px;
 }
-.links { text-align: center; }
+
+.links { 
+	text-align: center; 
+}
+
 .links a {
 	font-size: 20px;
 }
+
 .links a:hover {
 	color: black;
 }
+
 .main-link {
 	width: 100px;
 	border: 1px solid black;
@@ -29,25 +65,31 @@
 	margin: 10px;
 	text-align:center;
 }
+
 .what {
 	font-size: 3vw;
 	text-align: center;
 }
+
 .what + div {
 	text-align: center;
 }
+
 a {
 	text-decoration:none;
 	color: inherit;
 }
+
 .topic-content {
 	margin-bottom: 10px;
 	padding-top: 10px;
 }
+
 .topic-content + .topic-content {
 	border-top: 1px solid grey;
 	padding-top: 10px;
 }
+
 .topic-title {
 	border-top: 1px solid grey;
 	border-bottom: 1px solid grey;
@@ -58,13 +100,19 @@ a {
 	margin: 10px 0px;
 }
 
-.command-line {
+.column-title, .command-line {
 	font-weight: 600;
 }
 
 #helpful-links div {
 	text-align: center;
 }
+
 #helpful-links a:hover {
 	color: indianred;
+}
+
+.links .topic-title:hover {
+	background: black;
+	color: white;
 }

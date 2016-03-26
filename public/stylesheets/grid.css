@@ -34,3 +34,24 @@
 .eleven { width: 91.5333333333%; }
 .twelve { width: 100%;}
 
+@media only screen and (max-width: 550px) {
+    .one, 
+    .two, 
+    .three, 
+    .four, 
+    .five, 
+    .six, 
+    .seven, 
+    .eight,
+    .nine, 
+    .ten, 
+    .eleven, 
+    .twelve {
+        width: auto;
+        float: none;
+    }
+
+    .column + .column {
+        margin-left: 0;
+    }
+}
