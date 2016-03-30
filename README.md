@@ -1,7 +1,4 @@
-Sinatra
-=============
 
-Brought to you by Lighthouse Labs
 
 ## Getting Started
 
