@@ -8,7 +8,7 @@ get '/css' do
 end
 
 get '/html' do
-
+  erb :html
 end 
 
 get '/git' do
@@ -20,18 +20,23 @@ get '/ruby' do
 end 
 
 get '/sinatra' do
+  erb :sinatra
 end 
 
 get '/active-record' do 
-
+  erb :active_record
 end
 
-def greeting(answer)
-	"#{answer}"
-end
+get '/challenges' do 
+  erb :challenges
+end 
 
+# get '/javascript' do 
+# end 
 
-
+get '/*' do 
+  "Page not found"
+end 
 
 
 

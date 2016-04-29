@@ -1,0 +1,17 @@
+.heart {
+  position: relative;
+}
+
+.circle, .diamond {
+  border: 1px solid black;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+.circle {
+  border-radius: 50%;
+}
+
+.diamond {
+  transform: deg(45);
+}

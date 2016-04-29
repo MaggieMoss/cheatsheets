@@ -115,6 +115,13 @@ img {
 	margin: 10px 0px;
 }
 
+.topic-link {
+	border: 1px solid black;
+	text-transform: uppercase;
+	width: 200px;
+	margin-top: 10px;
+	padding: 5px;
+}
 .column-title, .command-line {
 	font-weight: 600;
 }
@@ -127,7 +134,7 @@ img {
 	color: indianred;
 }
 
-.links .topic-title:hover {
+.links .topic-title:hover, .topic-link:hover {
 	background: black;
 	color: white;
 }
