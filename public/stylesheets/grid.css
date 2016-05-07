@@ -21,6 +21,7 @@
 .column + .column {
 	margin-left: 1.6%;
 }
+
 .one 		{ width: 6.86666666667%; }
 .two 		{ width: 15.3333333333%; }
 .three 	{ width: 23.8%; }

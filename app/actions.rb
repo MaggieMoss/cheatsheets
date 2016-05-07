@@ -31,8 +31,9 @@ get '/challenges' do
   erb :challenges
 end 
 
-# get '/javascript' do 
-# end 
+get '/heroku' do
+  erb :heroku
+end 
 
 get '/*' do 
   "Page not found"
